@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    text-align: center;
+}
+header {
+    background-color: aqua;
+    color: black;
+    padding: 15px;
+}
+main {
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
