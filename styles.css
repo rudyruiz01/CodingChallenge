@@ -15,6 +15,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size:x-large;
 }
 .game {
     display: flex;
@@ -24,12 +25,18 @@ main {
     border: solid black 1px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px white;    
-    max-width: 400px;  
+    max-width: 600px;  
     margin: 0 30px 50px;  
     padding: 20px;
 }
 p {
     margin-bottom: 30px;
+}
+h1 {
+    font-size: 4em;
+}
+input {
+    font-size: large;
 }
 .num_param {
     width: 30px;
@@ -38,6 +45,7 @@ input[type=button] {
     justify-self: center;
     grid-column: 1/5;
     padding: 0 5px;
+    margin-bottom: 10px;
     background-color: rgb(212, 138, 0);
     border-radius: 5px;
     color: rgb(234, 234, 234);
@@ -45,18 +53,19 @@ input[type=button] {
 .number-n {    
     justify-self: center;   
     grid-column: 1/5;    
-    width: 100px;
+    width: 130px;
+    margin-top: 25px;
 }
 .inputs-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 70px 50px 55px 100px;
+    grid-template-columns: 120px 80px 90px 110px;
     row-gap: 12px;    
 }
-.inputs-container > label {
+label {
     width: fit-content;   
     justify-self: right; 
-    padding-right: 3px;
+    padding-right: 4px;
 }
 
 /* FIBONACCI SEQUENCE */
