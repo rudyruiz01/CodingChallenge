@@ -9,18 +9,73 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Fizz Buzz!</h1>
+        <h1>Welcome to the Games!</h1>
     </header>
     <main>
-        <h2>Rules: </h2>
-        <p>Enter a number and get "fizz" if its divisible by 3, "buzz" if its divisible by 5, or "fizzbuzz" if its divisible by both 3 and 5.</p>
-        <br>
-        <br>
-        <input type="number" name="number" id="number" placeholder="enter number">
-        <br>
-        <br>
-        <input type="submit" value="Submit" id="Submit">
-        <p id="output">Output</p>
+        <!-- Fizzbuss game -->
+        <div class="game">
+            <h2>FIZZBUZZ</h2>
+            <p>Enter a positive number and get "fizz" if its divisible by 3, "buzz" if its divisible by 5, or "fizzbuzz" if its divisible by both 3 and 5. <br>Additionally, you can enter your own divisors and words!</p>
+            <div class="inputs-container">
+                <label for="div1">Divisor 1:</label>      <input type="number" id="div1" value="3" class="num_param">
+                <label for="word1">Word 1:</label>
+                <input type="text" id="word1" value="fizz">
+
+                <label for="div2">Divisor 2:</label>
+                <input type="number" id="div2" value="5" class="num_param">                
+                <label for="word2">Word 2:</label>
+                <input type="text" id="word2" value="buzz">
+
+                <input type="number" id="fbNum" placeholder="enter number" class="number-n">
+
+                <input type="button" id="fbSubmit" value="Submit">
+            </div>            
+            <p id="fbOutput"></p>            
+        </div>
+
+        <!-- Fibonacci Sequence game -->
+        <div class="game">
+            <h2>FIBONACCI SEQUENCE</h2>
+            <p>Enter a number <i>n</i> and get the sum of the <i>n</i> - 1 and <i>n</i> - 2 numbers in the fibonacci sequence.<br>Additionally, you can replace the values of 1 and 2 to get the sum of different numbers in the fibonacci sequence.</p>
+            <div class="fsinputs-container">
+                <label for="y">y:</label>
+                <input type="number" id="y" value="1" class="num_param">  
+                <label for="z">z:</label>
+                <input type="number" id="z" value="2" class="num_param">  
+
+                <input type="number" id="fsNum" placeholder="enter n" class="number-n">
+
+                <input type="button" id="fsSubmit" value="Submit">
+            </div>            
+            <p id="fsOutput"></p>
+        </div>
+
+        <!-- Mix of both game -->
+        <div class="game">
+            <h2>MIX OF BOTH</h2>
+            <p>This game mixes the previous two games. Enter a number <i>n</i> and get the sum of the <i>n</i> - 1 and <i>n</i> - 2 numbers in the fibonacci sequence. If the numbers in the sequence are divisable by either divisors then their numbers will be replaced by the selected words. <br>Again, you can replace the values of 1 and 2 to get the sum of different numbers in the fibonacci sequence, as well as the divisors and selected words.</p>
+            <div class="inputs-container">
+                <label for="mgDiv1">Divisor 1:</label>      <input type="number" id="mgDiv1" value="3" class="num_param">
+                <label for="mgWord1">Word 1:</label>
+                <input type="text" id="mgWord1" value="fizz">
+
+                <label for="mgDiv2">Divisor 2:</label>
+                <input type="number" id="mgDiv2" value="5" class="num_param">                
+                <label for="mgWord2">Word 2:</label>
+                <input type="text" id="mgWord2" value="buzz">
+
+                <label for="mgY">y:</label>
+                <input type="number" id="mgY" value="1" class="num_param">  
+                <label for="mgZ">z:</label>
+                <input type="number" id="mgZ" value="2" class="num_param">  
+
+                <input type="number" id="mgNum" placeholder="enter n" class="number-n">
+
+                <input type="button" id="mgSubmit" value="Submit">
+            </div>            
+            <p id="mgOutput"></p>
+        </div>
     </main>
 </body>
+<script src="script.js"></script>
 </html>

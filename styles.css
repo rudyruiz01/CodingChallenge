@@ -5,19 +5,63 @@
 body {
     margin: 0;
     text-align: center;
+    background: linear-gradient(45deg, purple, orange, purple);
 }
-header {
-    background-color: aqua;
+header {    
     color: black;
     padding: 15px;
 }
 main {
-    border: solid black 2px;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 600px;    
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    border: solid black 1px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px white;    
+    max-width: 400px;  
+    margin: 0 30px 50px;  
     padding: 20px;
+}
+p {
+    margin-bottom: 30px;
+}
+.num_param {
+    width: 30px;
+}
+input[type=button] {
+    justify-self: center;
+    grid-column: 1/5;
+    padding: 0 5px;
+    background-color: rgb(212, 138, 0);
+    border-radius: 5px;
+    color: rgb(234, 234, 234);
+}
+.number-n {    
+    justify-self: center;   
+    grid-column: 1/5;    
+    width: 100px;
+}
+.inputs-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 70px 50px 55px 100px;
+    row-gap: 12px;    
+}
+.inputs-container > label {
+    width: fit-content;   
+    justify-self: right; 
+    padding-right: 3px;
+}
+
+/* FIBONACCI SEQUENCE */
+.fsinputs-container {
+    display: grid;
+    justify-content: center;
+    gap: 12px;
 }
